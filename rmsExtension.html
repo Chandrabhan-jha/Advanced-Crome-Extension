@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="rmsExtenstion.js"></script>
+    <link rel="stylesheet" href="rmsExtension.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="button-container">
+        <button type="button" id="autofill" class="reg-btn">Autofill Form</button>
+        <button type="button" id="logout" class="logout-btn">Logout</button>
+    </div>
+    <h2>Candidate Details Form</h2>
+    <form action="#" method="post">
+        <label for="client">Select Client:</label>
+        <select name="client" id="client"></select>
+
+        <label for="requirement">Select Requirement:</label>
+        <select name="requirement" id="requirement"></select>
+
+        <label for="location">Select Location:</label>
+        <select name="location" id="location"></select>
+
+        <label for="source">Select Source:</label>
+        <select name="source" id="source"></select>
+
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" />
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" />
+
+        <label for="contact">Contact Number:</label>
+        <input type="text" id="contact" name="contact" />
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="experience">Experience (in years):</label>
+        <input type="number" id="experience" name="experience" />
+
+        <label for="salary">Expected Salary:</label>
+        <input type="text" id="salary" name="salary" />
+
+        <label for="skill">Select skill:</label>
+        <!-- <select name="skill" id="skill" multiple></select> -->
+        <div class="container">
+            <div class="select-btn" id="select-skill">
+                <span class="btn-text" id="skill-btn-text">Select skills</span>
+                <span class="arrow-dwn">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </div>
+            <div class="content">
+                <div class="search">
+                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                    <input spellcheck="false" type="text" placeholder="Search" id="searchSkill" />
+                    <ul class="list-items" id="skill"></ul>
+                </div>
+            </div>
+        </div>
+
+        <label for="country">Select country:</label>
+        <select name="country" id="country"></select>
+
+        <label for="state">Select state:</label>
+        <select name="state" id="state"></select>
+
+        <label for="city">Select city:</label>
+        <select name="city" id="city"></select>
+
+        <label for="preferredLocation">Select preferred Location:</label>
+        <!-- <select name="preferredLocation" id="preferredLocation" multiple></select> -->
+        <div class="container">
+            <div class="select-btn" id="select-preferredLocation">
+                <span class="btn-text" id="preferredLocation-btn-text">Select preferred locations</span>
+                <span class="arrow-dwn">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </div>
+            <div class="content">
+                <div class="search">
+                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                    <input spellcheck="false" type="text" placeholder="Search" id="searchPreferredLocation" />
+                    <ul class="list-items" id="preferredLocation"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <input type="reset" value="Cancel" />
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+</body>
+
+</html>
